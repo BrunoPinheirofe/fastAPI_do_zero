@@ -1,0 +1,61 @@
+[
+    {
+        "label": "FastAPI",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPStatus",
+        "importPath": "http",
+        "description": "http",
+        "isExtraImport": true,
+        "detail": "http",
+        "documentation": {}
+    },
+    {
+        "label": "TestClient",
+        "importPath": "fastapi.testclient",
+        "description": "fastapi.testclient",
+        "isExtraImport": true,
+        "detail": "fastapi.testclient",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "importPath": "fast_zero.app",
+        "description": "fast_zero.app",
+        "isExtraImport": true,
+        "detail": "fast_zero.app",
+        "documentation": {}
+    },
+    {
+        "label": "read_root",
+        "kind": 2,
+        "importPath": "fast_zero.app",
+        "description": "fast_zero.app",
+        "peekOfCode": "def read_root():\n    return {'message': 'Ola mundo'}",
+        "detail": "fast_zero.app",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "fast_zero.app",
+        "description": "fast_zero.app",
+        "peekOfCode": "app = FastAPI()\n@app.get('/')\ndef read_root():\n    return {'message': 'Ola mundo'}",
+        "detail": "fast_zero.app",
+        "documentation": {}
+    },
+    {
+        "label": "test_read_root_deve_retornar_ok_e_ola_mundo",
+        "kind": 2,
+        "importPath": "tests.test_app",
+        "description": "tests.test_app",
+        "peekOfCode": "def test_read_root_deve_retornar_ok_e_ola_mundo():\n    client = TestClient(app)  # Arrange (organização)\n    response = client.get('/')  # Act (ação)\n    assert response.status_code == HTTPStatus.OK  # assert (validação)\n    assert response.json() == {'message': 'Ola mundo'}",
+        "detail": "tests.test_app",
+        "documentation": {}
+    }
+]
